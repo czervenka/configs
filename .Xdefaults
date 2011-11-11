@@ -4,11 +4,12 @@
 ! Use ! for comments (if you dont like a certain setting)
 
 ! ! XTerm
-XTerm*metaSendsEscape: on
+XTerm*metaSendsEscape:     on
 XTerm*underLine:           on
 XTerm*colorMode:           on
 XTerm*colorBDMode:         on
 XTerm*colorULMode:         on
+XTerm*background:          #112222
 
 ! Solarized
 #define S_base03        #002b36
@@ -35,7 +36,8 @@ XTerm*colorULMode:         on
 *foreground:            S_base00
 *fading:                40
 *fadeColor:             S_base03
-*cursorColor:           S_base1
+*cursorColor:           S_yellow
+! *cursorColor:           S_base1
 *pointerColorBackground:S_base01
 *pointerColorForeground:S_base1
 
@@ -71,6 +73,9 @@ XTerm*colorULMode:         on
 *color7:                S_base2
 *color15:               S_base3
 
+! default terminal font
+*.font: -xos4-terminus-medium-r-normal--14-*-72-72-*-*-iso10646-1
+
 ! The Xterm settings work for most terms like aterm, xterm, wterm and rxvt.
 
 ! If changing things in this file doesnt result in changes in your term
@@ -82,16 +87,6 @@ XTerm*colorULMode:         on
     ratmen.mouse: false
     ratmen.scrollOffset: 5
     ratmen.unfocusExit: true
-
-
-!                           Nice for manpages
-!
-XTerm*underLine:           on
-XTerm*colorMode:           on
-XTerm*colorBD:              S_yellow
-XTerm*colorBDMode:         on
-XTerm*colorUL:              S_green
-XTerm*colorULMode:         on
 
 ! Other settings
 

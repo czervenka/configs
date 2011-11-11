@@ -58,13 +58,6 @@ bindkey "\e[1;5D" backward-word
 # ctrl-right
 bindkey "\e[1;5C" forward-word
 
-if [ "$TERM" = "linux" ]; then
-    # ctrl-left
-    bindkey "\e[D" backward-word
-    # ctrl-right
-    bindkey "\e[C" forward-word
-fi
-
 
 # FUNCTIONS AND COMPLETIONS
 
