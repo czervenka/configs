@@ -1,0 +1,128 @@
+! Save this file as ~/.Xdefaults and start a term without any options to
+! see what it does.
+
+! Use ! for comments (if you dont like a certain setting)
+
+! ! XTerm
+XTerm*metaSendsEscape: on
+XTerm*underLine:           on
+XTerm*colorMode:           on
+XTerm*colorBDMode:         on
+XTerm*colorULMode:         on
+
+! Solarized
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+! #define S_yellow        #b58900
+#define S_yellow        #d38e00
+! #d38e00
+
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+*background:            S_base03
+*foreground:            S_base00
+*fading:                40
+*fadeColor:             S_base03
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
+
+!! black dark/light
+*color0:                S_base02
+*color8:                S_base03
+
+!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+
+!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+
+!! white dark/light
+*color7:                S_base2
+*color15:               S_base3
+
+! The Xterm settings work for most terms like aterm, xterm, wterm and rxvt.
+
+! If changing things in this file doesnt result in changes in your term
+! you should run `xrdb -load ~/.Xdefaults
+    ratmen.align: left
+    ratmen.background: #111
+    ratmen.foreground: #bbb
+    ratmen.font:  -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+    ratmen.mouse: false
+    ratmen.scrollOffset: 5
+    ratmen.unfocusExit: true
+
+
+!                           Nice for manpages
+!
+XTerm*underLine:           on
+XTerm*colorMode:           on
+XTerm*colorBD:              S_yellow
+XTerm*colorBDMode:         on
+XTerm*colorUL:              S_green
+XTerm*colorULMode:         on
+
+! Other settings
+
+!XTerm*VT100.Translations: #override \
+!              <Key>BackSpace: string(0x7F)
+!\n\
+!               <Key>Delete:    string("\033[3~")\n\
+! 	      <Key>Home:      string("\033OH")\n\
+!               <Key>End:       string("\033[4~")
+!              <Key>Home:      string("\033[1~")\n\
+!XTerm*ttyModes: erase ^?
+
+! These are for a tranparent mouse in XFree86 4.3 and later
+!Xcursor.size:       16
+!Xcursor.theme:      whiteglass
+!Xcursor.theme:    redglass 
+Xcursor.theme:      gentoo
+!Xcursor.theme:      jimmac
+Xcursor.size:       40
+
+! XDvi
+XDvi*mfMode:						   ljfour
+XDvi*pixelsPerInch:					   1200
+XDvi*shrinkFactor:					   8
+!XDvi*paper:						   a5
+XDvi*wwwBrowser:					   firefox
+XDvi*thorough:						   true
+XDvi*foreground:					   #202020
+XDvi*background:					   #eeeeee
+XDvi*underLink:    					   true
+XDvi*font:						   ter-120b
+
+
+

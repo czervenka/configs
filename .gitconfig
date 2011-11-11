@@ -1,0 +1,35 @@
+[color]
+	diff = auto
+	ui = true
+[pager]
+  diff =
+[color "branch"]
+    current = yellow reverse
+    loal = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[core]
+    whitespace=fix,-ident-with-non-tab,trailing-space,cr-at-eol
+[branch]
+    autosetupmerge = true
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    cot = checkout -t
+    df = diff
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    sup = branch --set-upstream
+    ls = ls-files

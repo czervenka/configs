@@ -223,6 +223,9 @@ filetype plugin indent on
 " When vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
+" load file specific configurations
+source ~/.vim/myftautoload/autoload.vim
+
 augroup filetypedetect
 au BufNewFile,BufRead *.wiki setf Wikipedia
 augroup END

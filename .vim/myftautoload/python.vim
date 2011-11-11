@@ -25,6 +25,8 @@ let g:pyflakes_use_quickfix = 0
 
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
+map <F5> :w<cr>:!python %<cr>
+imap <F5> <esc>:w<cr>:!python %<cr>
 
 let g:ropevim_local_prefix="<c-space>"
 let g:ropevim_enable_shortcuts=1
