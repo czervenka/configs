@@ -1,0 +1,2 @@
+#!/bin/sh
+grep --exclude-dir=.svn --exclude-dir=photos --exclude-dir=.git --exclude=tags --exclude='*.pyc' --exclude='*.jpg' -Eir "$@" .

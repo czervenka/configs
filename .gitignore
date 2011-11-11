@@ -1,3 +1,5 @@
 .zshrc_user
 tmp
 .vim/.*
+.mc/filepos
+.mc/history

@@ -55,10 +55,15 @@ bindkey "\e[3;5~" delete-word
 bindkey "\e[3~" delete-word
 # ctrl-left
 bindkey "\e[1;5D" backward-word
-bindkey "\e[D" backward-word
 # ctrl-right
-bindkey "\e[C" forward-word
 bindkey "\e[1;5C" forward-word
+
+if [ "$TERM" = "linux" ]; then
+    # ctrl-left
+    bindkey "\e[D" backward-word
+    # ctrl-right
+    bindkey "\e[C" forward-word
+fi
 
 
 # FUNCTIONS AND COMPLETIONS
