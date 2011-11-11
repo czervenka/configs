@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+   <head>
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+	   <link href="./templates/BlueGrey/styles.css" rel="stylesheet" media="screen">
+      <!--[if gte IE 5.5000]>
+      <script type="text/javascript" src="./templates/BlueGrey/png.js"></script>
+      <![endif]-->
+      <title>
+         WebSVN
+            - Unix Config
+               - Rev 15
+            - /.vim/colors/256_adaryn.vim
+      </title>
+
+      <script>
+         function checkCB(chBox)
+         {
+            count = 0
+            first = null
+            f = chBox.form
+            for (i = 0 ; i < f.elements.length ; i++)
+            if (f.elements[i].type == 'checkbox' && f.elements[i].checked)
+            {
+               if (first == null && f.elements[i] != chBox)
+                  first = f.elements[i]
+               count += 1
+            }
+            
+            if (count > 2) 
+            {
+               first.checked = false
+               count -= 1
+            }
+         }
+      </script>
+
+   </head>
+   <body>
+
+      <div style="text-align: center">
+        <a href="http://subversion.tigris.org/"><img style="border: 0; width: 468px; height: 64px" src="./templates/BlueGrey/subversion.png" alt="Subversion" /></a>
+      </div>
+      
+      <hr>
+
+<div align="right"><form action="form.php?path=&amp;" method="post" name="projectform"><select name="repname" onchange="javascript:this.form.submit();"><option value="Unix Config" selected>Unix Config</option><option value="OpenVaiya" >OpenVaiya</option></select><input type="submit" value="Go"><input type="hidden" name="selectproj" value="1"><input type="hidden" name="op" value="form"><input type="hidden" name="sc" value="0"></form></div>
+<h2>Unix Config</h2>
+[<a href="listing.php?repname=Unix Config&amp;path=%2F&amp;rev=0&amp;sc=0">/]</a> [<a href="listing.php?repname=Unix Config&amp;path=%2F.vim%2F&amp;rev=0&amp;sc=0">.vim/]</a> [<a href="listing.php?repname=Unix Config&amp;path=%2F.vim%2Fcolors%2F&amp;rev=0&amp;sc=0">colors/]</a> [<b>256_adaryn.vim</b>] - Rev 15
+<p>
+<a href="diff.php?repname=Unix Config&amp;path=%2F.vim%2Fcolors%2F256_adaryn.vim&amp;rev=0&amp;sc=0">Compare with Previous</a> - <a href="blame.php?repname=Unix Config&amp;path=%2F.vim%2Fcolors%2F256_adaryn.vim&amp;rev=0&amp;sc=0">Blame</a>
+<p>
+<hr>
+<table width="100%" border=0><tr><td class="row0">
+<PRE>&quot; NOTE: this is not the original file! converted for use with xterm-256
+&quot; Vim color file
+&quot; Maintainer:	Glenn T. Norton &lt;gtnorton@adaryn.com&gt;
+&quot; Last Change:	2003-04-11
+
+&quot; adaryn - A color scheme named after my daughter, Adaryn. (A-da-rin)
+&quot; I like deep, sharp colors and this scheme is inspired by 
+&quot; Bohdan Vlasyuk's darkblue.
+&quot; The cterm background is black since the dark blue was just too light.
+&quot; Also the cterm colors are very close to an old Borland C++ color setup.
+
+set background=dark
+hi clear
+if exists(&quot;syntax_on&quot;)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;syntax reset
+endif
+
+let colors_name = &quot;256_adaryn&quot;
+
+hi Normal   ctermfg=15	 ctermbg=17	  
+hi ErrorMsg ctermfg=15	 ctermbg=33		 
+hi Visual   ctermfg=105	 cterm=reverse   
+
+hi VisualNOS ctermfg=105	 cterm=reverse,underline   
+
+hi Todo ctermfg=166	 ctermbg=26	 
+
+hi Search ctermfg=123	 ctermbg=26		   
+
+hi IncSearch    ctermfg=159	 ctermbg=26	  
+
+hi SpecialKey   ctermfg=14	 
+hi Directory    ctermfg=14	 
+hi Title	ctermfg=150	 cterm=none  
+hi WarningMsg	ctermfg=9	 
+hi WildMenu	ctermfg=11	 ctermbg=0	    
+hi ModeMsg	ctermfg=44	 
+hi Question	ctermfg=10	 cterm=none  
+hi NonText	ctermfg=27	 
+
+hi StatusLine   ctermfg=21	 ctermbg=248	 cterm=none    
+
+hi StatusLineNC ctermfg=0	 ctermbg=248	 cterm=none    
+
+hi VertSplit ctermfg=0	 ctermbg=248	 cterm=none    
+
+hi Folded   ctermfg=244	 ctermbg=17		   
+
+hi FoldColumn   ctermfg=244	 ctermbg=17	    
+
+hi LineNr   ctermfg=118	    
+
+hi DiffAdd  ctermbg=18	   
+hi DiffChange   ctermbg=90	  
+hi DiffDelete	  cterm=bold ctermfg=21	 ctermbg=30	
+hi DiffText	  cterm=bold ctermbg=9	
+
+hi Cursor	ctermfg=233	 ctermbg=215	  
+hi lCursor	ctermfg=15	 ctermbg=0	  
+
+
+hi Comment	ctermfg=11	 
+hi Constant	 ctermfg=10	 
+hi Special	 ctermfg=15	  cterm=none
+hi Identifier	 ctermfg=150	 
+hi Statement	  ctermfg=142	 cterm=none
+hi PreProc	 ctermfg=15	 cterm=none 
+hi type		 ctermfg=152	 cterm=none 
+
+
+</PRE></td></tr></table>
+<hr>
+
+      <p><center><font size="-1"><i><b>Powered by <a href="http://websvn.tigris.org/">WebSVN</a> v1.61</b></i></font></center>
+   </body>
+</html>

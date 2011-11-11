@@ -1,0 +1,16 @@
+#!/bin/bash
+xrdb -merge ~/.Xdefaults
+color_bg="#122"
+color_fg='#839496'
+
+
+FAST_SCROLL=" -j -s"
+BLINK_CURSOR="-bc -cr green -bcf 300 -bcn 700"
+FONT='xos4-terminus'
+FONT_SIZE='14'
+FONT_ENC='iso10646-1'
+
+
+fontspec="$FONT-medium-r-normal--$FONT_SIZE-*-*-*-*-*-$FONT_ENC"
+#export TERM="xterm-256"
+/usr/bin/xterm -cr "$color_fg" -fg "$color_fg" -bg "$color_bg" -geometry 120x50 -lc -fn -$FONT-medium-r-normal--$FONT_SIZE-*-72-72-*-*-$FONT_ENC $BLINK_CURSOR $FAST_SCROLL $@

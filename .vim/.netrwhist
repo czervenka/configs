@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/tmp/yaourt-tmp-robin/aur-unladen-swallow/src/unladen/Util/llvm/tools/llvm-config'
+let g:netrw_dirhist_2='/home/robin/data/projects/kraus/docs'
+let g:netrw_dirhist_3='/home/robin/.vim/bundle/makegreen'
+let g:netrw_dirhist_4='/home/robin/.vim/bundle/nerdtree'
+let g:netrw_dirhist_5='/var/tmp/2011-10-01_martina'
+let g:netrw_dirhist_6='/home/robin/data/projects/kraus/kraus/requirements'
+let g:netrw_dirhist_7='/home/robin/data/projects/sensa/src/sensa/sensa/sensa_auth'
+let g:netrw_dirhist_8='/home/robin'

@@ -1,0 +1,14 @@
+alias l='ls -lh --color=auto --time-style=long-iso $*'
+alias ll='ls -alh --color=auto --time-style=long-iso $*'
+alias lt='ls -lh --color=auto --time-style=long-iso -t $*'
+alias dh='dirs -v'
+alias grep='grep --color=auto'
+alias less='less -r'
+alias cd..='cd .. $@'
+
+alias vim='vim -p'
+alias vi='vim -p'
+alias pp='git pull&&git push'
+alias tmux=~/bin/tmux.sh
+alias pgrep='pgrep -l'
+alias su-root='sudo su - root -c zsh'

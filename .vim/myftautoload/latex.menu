@@ -1,0 +1,153 @@
+"menu pro Vim pro editaci zdrojových textù LaTeXu
+"Pavel Satrapa & spol., 1. èervence 2001
+"--------------------------------------------------------------------------
+imenu &LaTeX.Písmo.zvýraznìné\ (kurzíva) \emph{}<Left>
+vmenu &LaTeX.Písmo.zvýraznìné\ (kurzíva) <Esc>`>a}<Esc>`<i\emph{<Esc>%
+imenu &LaTeX.Písmo.-SEP1- :
+imenu &LaTeX.Písmo.tuèné \textbf{}<Left>
+vmenu &LaTeX.Písmo.tuèné <Esc>`>a}<Esc>`<i\textbf{<Esc>%
+imenu &LaTeX.Písmo.neproporcionální\ (psací\ stroj) \texttt{}<Left>
+vmenu &LaTeX.Písmo.neproporcionální\ (psací\ stroj) <Esc>`>a}<Esc>`<i\texttt{<Esc>%
+imenu &LaTeX.Písmo.kapitálky \textsc{}<Left>
+vmenu &LaTeX.Písmo.kapitálky <Esc>`>a}<Esc>`<i\textsc{<Esc>%
+imenu &LaTeX.Písmo.sklonìné \textsl{}<Left>
+vmenu &LaTeX.Písmo.sklonìné <Esc>`>a}<Esc>`<i\textsl{<Esc>%
+imenu &LaTeX.Písmo.-SEP2- :
+imenu &LaTeX.Písmo.tiny<Tab>(nejmen¹í) \tiny 
+vmenu &LaTeX.Písmo.tiny<Tab>(nejmen¹í) <Esc>`>a}<Esc>`<i{\tiny <Esc>F{%
+imenu &LaTeX.Písmo.scriptsize \scriptsize 
+vmenu &LaTeX.Písmo.scriptsize <Esc>`>a}<Esc>`<i{\scriptsize <Esc>F{%
+imenu &LaTeX.Písmo.footnotesize \footnotesize 
+vmenu &LaTeX.Písmo.footnotesize <Esc>`>a}<Esc>`<i{\footnotesize <Esc>F{%
+imenu &LaTeX.Písmo.small \small 
+vmenu &LaTeX.Písmo.small <Esc>`>a}<Esc>`<i{\small <Esc>F{%
+imenu &LaTeX.Písmo.normalsize<Tab>(normální) \normalsize 
+vmenu &LaTeX.Písmo.normalsize<Tab>(normální) <Esc>`>a}<Esc>`<i{\normalsize <Esc>F{%
+imenu &LaTeX.Písmo.large \large 
+vmenu &LaTeX.Písmo.large <Esc>`>a}<Esc>`<i{\large <Esc>F{%
+imenu &LaTeX.Písmo.Large \Large 
+vmenu &LaTeX.Písmo.Large <Esc>`>a}<Esc>`<i{\Large <Esc>F{%
+imenu &LaTeX.Písmo.LARGE \LARGE 
+vmenu &LaTeX.Písmo.LARGE <Esc>`>a}<Esc>`<i{\LARGE <Esc>F{%
+imenu &LaTeX.Písmo.huge \huge 
+vmenu &LaTeX.Písmo.huge <Esc>`>a}<Esc>`<i{\huge <Esc>F{%
+imenu &LaTeX.Písmo.Huge<Tab>(nejvìt¹í) \Huge 
+vmenu &LaTeX.Písmo.Huge<Tab>(nejvìt¹í) <Esc>`>a}<Esc>`<i{\Huge <Esc>F{%
+"--------------------------------------------------------------------------
+imenu &LaTeX.Nadpis.Èást \part{}<Left>
+vmenu &LaTeX.Nadpis.Èást <Esc>`>a}<Esc>`<i\part{<Esc>%
+imenu &LaTeX.Nadpis.Kapitola \chapter{}<Left>
+vmenu &LaTeX.Nadpis.Kapitola <Esc>`>a}<Esc>`<i\chapter{<Esc>%
+imenu &LaTeX.Nadpis.Kapitolka \section{}<Left>
+vmenu &LaTeX.Nadpis.Kapitolka <Esc>`>a}<Esc>`<i\section{<Esc>%
+imenu &LaTeX.Nadpis.Podkapitolka \subsection{}<Left>
+vmenu &LaTeX.Nadpis.Podkapitolka <Esc>`>a}<Esc>`<i\subsection{<Esc>%
+imenu &LaTeX.Nadpis.Podpodkapitolka \subsubsection{}<Left>
+vmenu &LaTeX.Nadpis.Podpodkapitolka <Esc>`>a}<Esc>`<i\subsubsection{<Esc>%
+imenu &LaTeX.Nadpis.Odstavec \paragraph{}<Left>
+vmenu &LaTeX.Nadpis.Odstavec <Esc>`>a}<Esc>`<i\paragraph{<Esc>%
+imenu &LaTeX.Nadpis.Pododstavec \subparagraph{}<Left>
+vmenu &LaTeX.Nadpis.Pododstavec <Esc>`>a}<Esc>`<i\subparagraph{<Esc>%
+imenu &LaTeX.Nadpis.-SEP1- :
+imenu &LaTeX.Nadpis.Èást* \part*{}<Left>
+vmenu &LaTeX.Nadpis.Èást* <Esc>`>a}<Esc>`<i\part*{<Esc>%
+imenu &LaTeX.Nadpis.Kapitola* \chapter*{}<Left>
+vmenu &LaTeX.Nadpis.Kapitola* <Esc>`>a}<Esc>`<i\chapter*{<Esc>%
+imenu &LaTeX.Nadpis.Kapitolka* \section*{}<Left>
+vmenu &LaTeX.Nadpis.Kapitolka* <Esc>`>a}<Esc>`<i\section*{<Esc>%
+imenu &LaTeX.Nadpis.Podkapitolka* \subsection*{}<Left>
+vmenu &LaTeX.Nadpis.Podkapitolka* <Esc>`>a}<Esc>`<i\subsection*{<Esc>%
+imenu &LaTeX.Nadpis.Podpodkapitolka* \subsubsection*{}<Left>
+vmenu &LaTeX.Nadpis.Podpodkapitolka* <Esc>`>a}<Esc>`<i\subsubsection*{<Esc>%
+imenu &LaTeX.Nadpis.Odstavec* \paragraph*{}<Left>
+vmenu &LaTeX.Nadpis.Odstavec* <Esc>`>a}<Esc>`<i\paragraph*{<Esc>%
+imenu &LaTeX.Nadpis.Pododstavec* \subparagraph*{}<Left>
+vmenu &LaTeX.Nadpis.Pododstavec* <Esc>`>a}<Esc>`<i\subparagraph*{<Esc>%
+"--------------------------------------------------------------------------
+imenu &LaTeX.Formátování\ textu.Seznam\ s\ odrá¾kami\ (itemize) \begin{itemize}<CR>\item <CR>\item <CR>\item <CR>\end{itemize}<Up><Up><Up>
+imenu &LaTeX.Formátování\ textu.Seznam\ èíslovaný\ (enumerate) \begin{enumerate}<CR>\item <CR>\item <CR>\item <CR>\end{enumerate}<Up><Up><Up>
+imenu &LaTeX.Formátování\ textu.Seznam\ s\ nadpisy\ (description) \begin{description}<CR>\item[] <CR>\item[] <CR>\item[] <CR>\end{description}<Up><Up><Up>
+imenu &LaTeX.Formátování\ textu.Polo¾ka\ seznamu \item 
+imenu &LaTeX.Formátování\ textu.Polo¾ka\ seznamu\ se\ jménem \item[] 
+imenu &LaTeX.Formátování\ textu.-SEP1- :
+imenu &LaTeX.Formátování\ textu.Odsazený\ krátký \begin{quote}<CR><CR>\end{quote}<Up>
+imenu &LaTeX.Formátování\ textu.Odsazený\ dlouhý \begin{quotation}<CR><CR>\end{quotation}<Up>
+imenu &LaTeX.Formátování\ textu.Centrovaný \begin{center}<CR><CR>\end{center}<Up>
+imenu &LaTeX.Formátování\ textu.Na\ prapor\ vlevo \begin{flushleft}<CR><CR>\end{flushleft}<Up>
+imenu &LaTeX.Formátování\ textu.Na\ prapor\ vpravo \begin{flushright}<CR><CR>\end{flushright}<Up>
+imenu &LaTeX.Formátování\ textu.-SEP2- :
+imenu &LaTeX.Formátování\ textu.Pøedformátovaný\ (opis\ vstupu,\ verbatim) \begin{verbatim}<CR><CR>\end{verbatim}<Up>
+imenu &LaTeX.Formátování\ textu.Krátký\ opis\ vstupu\ (verb) \verb''<Left>
+"--------------------------------------------------------------------------
+imenu &LaTeX.Tabulka/Obrázek.Základní\ tabulka \begin{tabular}{lll}<CR><CR>\end{tabular}<Up> &  &  \\<Home>
+imenu &LaTeX.Tabulka/Obrázek.Plovoucí\ tabulka \begin{table}[htp]<CR><CR>\caption{}<CR>\end{table}<Up><Up>
+imenu &LaTeX.Tabulka/Obrázek.-SEP1- :
+imenu &LaTeX.Tabulka/Obrázek.Vícesloupcová\ buòka \multicolumn{2}{l}{}<Left>
+imenu &LaTeX.Tabulka/Obrázek.Èára\ pøes\ nìkolik\ sloupcù \cline{-}<Left><Left>
+imenu &LaTeX.Tabulka/Obrázek.Èára\ pøes\ celou\ tabulku \hline<CR>
+imenu &LaTeX.Tabulka/Obrázek.-SEP2- :
+imenu &LaTeX.Tabulka/Obrázek.Plovoucí\ obrázek \begin{figure}[htp]<CR><CR>\caption{}<CR>\end{figure}<Up><Up>
+imenu &LaTeX.Tabulka/Obrázek.Vlo¾it\ obrázek\ (soubor) \includegraphics{}<Left>
+"--------------------------------------------------------------------------
+imenu &LaTeX.Rejstøík\ a\ obsah.Heslo\ do\ rejstøíku<Tab>\\index \index{}<Left>
+vmenu &LaTeX.Rejstøík\ a\ obsah.Heslo\ do\ rejstøíku<Tab>\\index y`<i\index{}<Esc>P<Right>
+imenu &LaTeX.Rejstøík\ a\ obsah.Heslo\ do\ rejstøíku,\ zaèátek \index{\|(}<Left><Left><Left>
+vmenu &LaTeX.Rejstøík\ a\ obsah.Heslo\ do\ rejstøíku,\ zaèátek y`<i\index{\|(}<Esc>T{Pf}
+imenu &LaTeX.Rejstøík\ a\ obsah.Heslo\ do\ rejstøíku,\ konec \index{\|)}<Left><Left><Left>
+vmenu &LaTeX.Rejstøík\ a\ obsah.Heslo\ do\ rejstøíku,\ konec y`<i\index{\|)}<Esc>T{Pf}
+imenu &LaTeX.Rejstøík\ a\ obsah.Heslo\ do\ rejstøíku,\ tuènì \index{\|textbf}T{
+vmenu &LaTeX.Rejstøík\ a\ obsah.Heslo\ do\ rejstøíku,\ tuènì y`<i\index{\|textbf}<Esc>T{Pf}
+imenu &LaTeX.Rejstøík\ a\ obsah.Vysázet\ rejstøík %nezapomeòte pøed \begin{document} vlo¾it:<CR>%\RequirePackage{makeidx}<CR>%\makeindex<CR>\printindex
+imenu &LaTeX.Rejstøík\ a\ obsah.-SEP1- :
+imenu &LaTeX.Rejstøík\ a\ obsah.Obsah \tableofcontents<CR>
+imenu &LaTeX.Rejstøík\ a\ obsah.Seznam\ obrázkù \listoffigures<CR>
+imenu &LaTeX.Rejstøík\ a\ obsah.Seznam\ tabulek \listoftables<CR>
+imenu &LaTeX.Rejstøík\ a\ obsah.Pøidat\ øádek\ obsahu \addcontentsline{toc}{section}{}<Left>
+imenu &LaTeX.Rejstøík\ a\ obsah.Pøidat\ do\ obsahu \addtocontents{toc}{}<Left>
+"--------------------------------------------------------------------------
+imenu &LaTeX.Odkaz.Návìstí \label{}<Left>
+vmenu &LaTeX.Odkaz.Návìstí y`<i\label{}<Esc>P<Right>
+imenu &LaTeX.Odkaz.Odkaz \ref{}<Left>
+imenu &LaTeX.Odkaz.Odkaz\ na\ stránku \pageref{}<Left>
+"--------------------------------------------------------------------------
+imenu &LaTeX.Matematika.Vzorec\ v\ øádku $  $<Left><Left>
+imenu &LaTeX.Matematika.Vzorec\ samostatný $$  $$<Left><Left><Left>
+imenu &LaTeX.Matematika.Vzorec\ èíslovaný \begin{equation}<CR><CR>\end{equation}<Up>
+imenu &LaTeX.Matematika.Vzorec\ nìkolik\ èíslovaných \begin{eqnarray}<CR><CR>\end{eqnarray}<Up> &  &  \\<C-O>0
+imenu &LaTeX.Matematika.-SEP1- :
+imenu &LaTeX.Matematika.Zlomek \frac{}{}<Left><Left><Left>
+imenu &LaTeX.Matematika.Odmocnina \sqrt{}<Left>
+imenu &LaTeX.Matematika.Tøetí\ odmocnina \sqrt[3]{}<Left>
+imenu &LaTeX.Matematika.Suma \sum_{}^{}<Left><Left><Left><Left>
+imenu &LaTeX.Matematika.Produkce \prod_{}^{}<Left><Left><Left><Left>
+imenu &LaTeX.Matematika.Matice \left( \begin{array}{ccc}<CR><CR>\end{array} \right)<Up> &  &  \\<C-O>0
+"--------------------------------------------------------------------------
+imenu &LaTeX.Vlo¾it.Uvozovky \uv{}<Left>
+vmenu &LaTeX.Vlo¾it.Uvozovky <Esc>`>a}<Esc>`<i\uv{<Esc>%
+imenu &LaTeX.Vlo¾it.-SEP1- :
+imenu &LaTeX.Vlo¾it.Poznámku\ pod\ èarou \footnote{}<Left>
+imenu &LaTeX.Vlo¾it.Poznámku\ na\ okraj \marginpar{}<Left>
+imenu &LaTeX.Vlo¾it.-SEP2- :
+imenu &LaTeX.Vlo¾it.Doporuèený\ konec\ stránky \pagebreak[3]
+imenu &LaTeX.Vlo¾it.Konec\ stránky \newpage
+imenu &LaTeX.Vlo¾it.Konec\ stránky\ a\ plovoucí\ objekty \clearpage
+imenu &LaTeX.Vlo¾it.-SEP3- :
+imenu &LaTeX.Vlo¾it.Mezeru.Ètverèík \quad
+imenu &LaTeX.Vlo¾it.Mezeru.Dva\ ètverèíky \qquad
+imenu &LaTeX.Vlo¾it.Mezeru.Vodorovnou \hspace{}<Left>
+imenu &LaTeX.Vlo¾it.Mezeru.Vodorovnou\ povinnou \hspace*{}<Left>
+imenu &LaTeX.Vlo¾it.Mezeru.Vodorovnou\ nekoneènou \hfill
+imenu &LaTeX.Vlo¾it.Mezeru.-SEP1- :
+imenu &LaTeX.Vlo¾it.Mezeru.Malou\ svislou \smallskip<CR>
+imenu &LaTeX.Vlo¾it.Mezeru.Støední\ svislou \medskip<CR>
+imenu &LaTeX.Vlo¾it.Mezeru.Velkou\ svislou \bigskip<CR>
+imenu &LaTeX.Vlo¾it.Mezeru.Svislou \vspace{}<Left>
+imenu &LaTeX.Vlo¾it.Mezeru.Svislou\ povinnou \vspace*{}<Left>
+imenu &LaTeX.Vlo¾it.Mezeru.Svislou\ nekoneènou \vfill
+imenu &LaTeX.Vlo¾it.Symbol.Tøi\ teèky {\ldots}
+imenu &LaTeX.Vlo¾it.Symbol.Paragraf {\S}
+imenu &LaTeX.Vlo¾it.Symbol.Copyright {\copyright}
+imenu &LaTeX.Vlo¾it.Symbol.Stupeò $^\circ$
+imenu &LaTeX.Vlo¾it.Datum {\today}
+imenu &LaTeX.Vlo¾it.Logo\ TeX {\TeX}
+imenu &LaTeX.Vlo¾it.Logo\ La\.TeX {\LaTeX}

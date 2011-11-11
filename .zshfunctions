@@ -1,0 +1,11 @@
+pycd() {
+    module="$1"
+    cd "`python -c "import $module, os; print os.path.dirname($module.__file__)"`"
+}
+
+# zsh autocompletion
+_pycd_cpl() {
+    reply=(`$HOME/bin/list_python_modules.py`)
+}
+
+compctl -K _pycd_cpl pycd
