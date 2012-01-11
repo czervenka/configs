@@ -9,6 +9,8 @@ let g:ropevim_guess_project=1
 " solarized colorscheme
 let g:solarized_contrast="low"
 
+" if vim was compiled with python allow some virtualenv enhancements 
+if has('python')
 py << EOF
 import os.path
 import sys
@@ -21,6 +23,7 @@ if 'VIRTUAL_ENV' in os.environ:
     if os.path.exists(activate_this):
         execfile(activate_this, dict(__file__=activate_this))
 EOF
+endif
 
 
 " pathogen autoload bundles
@@ -115,8 +118,8 @@ set completeopt=menu,preview
 set wildchar=<Tab>
 set wildmenu
 "set wildmode=longest:list,full
-set wildmode=list,full
-set wildignore=*.pyc,*.pdf,*.jpg,*.gif
+set wildmode=longest,list,full
+set wildignore=*.pyc,*.pdf,*.jpg,*.gif,.git
 
 " set statusline=%1*%n:%*\ %<%f\ %y%m%2*%r%*%=[%b,0x%B]\ \ %l/%L,%c%V\ \ %P
 set statusline=%{fugitive#statusline()}%1*%n:%*\ %<%f\ %y%m%2*%r%*%=[%b,0x%B]\ \ %l/%L,%c%V\ \ %P
@@ -124,6 +127,7 @@ set statusline=%{fugitive#statusline()}%1*%n:%*\ %<%f\ %y%m%2*%r%*%=[%b,0x%B]\ \
 
 set fileencoding=utf8
 "set fileencodings=latin2,windows-1250,utf8
+set fileencodings=
 
 set t_Co=256
 set cuc
