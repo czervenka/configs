@@ -48,7 +48,10 @@ bindkey "\e[8~" end-of-line
 bindkey "\e[F"  end-of-line
 bindkey "\e[4~"  end-of-line
 bindkey "\e[3~" delete-char
-bindkey "\eOA" history-search-forward
+bindkey "\eOA" history-beginning-search-backward
+bindkey "\eOB" history-beginning-search-forward
+bindkey "\ek" history-beginning-search-backward
+bindkey "\ej" history-beginning-search-forward
 
 # ctrl-del
 bindkey "\e[3;5~" delete-word
@@ -71,14 +74,6 @@ sudo-prepend() {
 zle -N sudo-prepend
 bindkey "" sudo-prepend
 
-# init scripts
-compctl -k "(`ls /etc/rc.d/`)" d
-compctl -k "(`ls /etc/rc.d/`)" u
-# timesheet
-t_complete() {
-    reply=(`t .zsh_complete`)
-}
-compctl -K t_complete t
 
 eval `dircolors ~/.dircolors`
 
